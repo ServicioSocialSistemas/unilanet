@@ -135,7 +135,7 @@ a:hover {
 }
 
 .navbar-inverse {
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.91);
     border: none;
 }
 
@@ -167,37 +167,31 @@ a:hover {
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar .hidden-xs:hover {
     color: rgba(231,199,112,1.00);
-    text-shadow: 0px 0px #050505;
-    background-color: #000000;
 }
 
 .banner {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 100vh;
     color: #fff;
     padding-top: 90px;
     position: relative;
     text-transform: uppercase;
     background-position: center;
     background-size: cover;
-    background-image: url('../images/banner.jpg'), -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(231,199,112,1.00) 100%);
-    background-image: url('../images/banner.jpg'), -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(231,199,112,1.00) 100%);
-    background-image: url('../images/banner.jpg'), -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(231,199,112,1.00) 100%);
-    background-image: url('../images/banner.jpg'), linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(231,199,112,1.00) 100%);
-    text-shadow: 0px 0px #000000;
+    background-repeat: no-repeat;
+    background-image: url('../images/banner.jpg');
 }
 
 .banner .gradient {
     background: -moz-linear-gradient(-45deg, rgba(255, 0, 251, 0.5) 0%, rgba(0, 24, 255, 0.5) 100%);
     background: -webkit-linear-gradient(-45deg, rgba(255, 0, 251, 0.5) 0%, rgba(0, 24, 255, 0.5) 100%);
     background: linear-gradient(135deg, rgba(255, 0, 251, 0.5) 0%, rgba(0, 24, 255, 0.5) 100%);
-
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ff00fb', endColorstr='#800018ff', GradientType=1);
     position: absolute;
     width: 100%;
-    height: 50px;
+    height: 100%;
     top: 0;
 }
 
@@ -266,7 +260,7 @@ a:hover {
 
 .about .fa {
     margin-right: 15px;
-    color: #FFFFFF;
+    color: white;
 }
 
 .about .text-block a span {
@@ -766,10 +760,10 @@ textarea.form-control {
     color: white;
     letter-spacing: 1px;
     word-spacing: 1px;
+    padding-bottom: 20px;
     font-weight: 200;
     line-height: 30px;
     vertical-align: 30px;
-    width: 1000px;
 }
 
 .thumbnail > img {
@@ -877,21 +871,20 @@ textarea.form-control {
 }
 
 #fade-quote-carousel img {
-    width: 200px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     margin: 0 auto;
-    border-radius: 0px;
+    margin-bottom: 25px;
+    border-radius: 100px;
 }
 
 /*== Footer Section Start ==*/
 
 footer {
-    padding-bottom: 10px;
-    padding-top: 10px;
-    background-color: #000000;
+    padding-bottom: 75px;
+    padding-top: 75px;
+    background-color: black;
     background-position: bottom;
-    width: 0px;
-    text-shadow: 0px 0px #000000;
 }
 
 footer .Subscribe {
@@ -983,8 +976,6 @@ footer ul {
 footer ul {
     list-style-type: none;
     text-align: center;
-    width: 1200px;
-    color: #000000;
 }
 
 footer li {
@@ -1002,7 +993,6 @@ footer p {
     text-transform: uppercase;
     padding-bottom: 50px;
     font-weight: 600;
-    width: 1200px;
 }
 
 .thumbnail {
@@ -1092,12 +1082,13 @@ footer .form-control {
 
 #about-us p {
     margin: 0;
-    color: #000000;
+    color: #808080;
     font-size: 17px;
     line-height: 1.6;
     font-weight: 100;
     text-align: justify;
     padding: 0 0;
+    font-family: Helvetica;
     margin-bottom: 250px;
 }
 
@@ -1734,9 +1725,8 @@ Blog-page
 
 @media only screen and (max-width: 1920px) and (min-width: 1439px) {
     .container {
-    width: 100%;
-    padding: 0 82px;
-    font-family: Montserrat, sans-serif;
+        width: 100%;
+        padding: 0 82px;
     }
 }
 
